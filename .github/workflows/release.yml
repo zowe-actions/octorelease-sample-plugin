@@ -29,7 +29,6 @@ jobs:
       run: npm ci
 
     - name: Publish Release
-      if: github.event_name == 'push'
       uses: octorelease/octorelease@master
       env:
         GIT_COMMITTER_NAME: GitHub Actions
@@ -37,5 +36,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       with:
-        dry-run: true
         new-version: ${{ github.events.inputs.version }}
