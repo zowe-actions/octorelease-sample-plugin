@@ -8,9 +8,9 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm run lint",
     "lint": "eslint src",
-    "prepare": "npm run build",
+    "prepare": "tsc",
     "test": "jest",
     "watch": "tsc -w"
   },
