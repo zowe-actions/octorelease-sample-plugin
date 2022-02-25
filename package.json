@@ -14,9 +14,15 @@
     "test": "jest",
     "watch": "tsc -w"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "octorelease",
+    "plugin",
+    "publish",
+    "sample",
+    "version"
+  ],
+  "author": "t1m0thyj",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
